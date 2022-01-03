@@ -629,8 +629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1942118006}
-  offset: {x: 0, y: 0.75, z: -1.5}
   smoothSpeed: 0.1
+  offset: {x: 0, y: 0.75, z: -1.5}
 --- !u!1001 &1302736470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1208,6 +1208,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6777200907133572641, guid: b64d0ad796a61114d84fd6ee4ed1671b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510594049527898321, guid: b64d0ad796a61114d84fd6ee4ed1671b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8510594049527898322, guid: b64d0ad796a61114d84fd6ee4ed1671b, type: 3}
       propertyPath: m_RootOrder
       value: 2
