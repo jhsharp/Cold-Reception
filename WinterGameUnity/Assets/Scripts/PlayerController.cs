@@ -11,10 +11,15 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     [SerializeField] private LayerMask ground;
+    [SerializeField] private LayerMask enemy;
+    [SerializeField] private Transform attackPos;
 
     private float moveInput;
     private Vector3 moveChange;
     [SerializeField] private float moveSpeed, jumpSpeed;
+    [SerializeField] private float meleeCooldown, meleeRange;
+    [SerializeField] private int meleeDamage;
+    private float meleeTimer;
 
     private void Awake()
     {
@@ -43,8 +48,15 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         move();
+        melee();
         if (isGrounded()) animator.SetBool("Grounded", true);
         else animator.SetBool("Grounded", false);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, meleeRange);
     }
 
     private void move()
@@ -98,5 +110,23 @@ public class PlayerController : MonoBehaviour
         bottomRight.y -= col.bounds.extents.y - 0.1f;
 
         return Physics2D.OverlapArea(topLeft, bottomRight, ground);
+    }
+
+    private void melee()
+    {
+        if (meleeTimer <= 0)
+        {
+            if (controls.Player.Melee.ReadValue<float>() > 0)
+            {
+                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos.position, meleeRange, enemy);
+                for (int i = 0; i < hitEnemies.Length; i++)
+                {
+                    hitEnemies[i].GetComponent<EnemyBase>().takeDamage(meleeDamage);
+                }
+                meleeTimer = meleeCooldown;
+                animator.SetTrigger("Melee");
+            }
+        }
+        else meleeTimer -= Time.deltaTime;
     }
 }
