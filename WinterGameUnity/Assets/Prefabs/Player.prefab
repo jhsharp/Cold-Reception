@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1799688613511850051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8510594049527898327}
   - component: {fileID: 8510594049527898323}
   - component: {fileID: 8049197844063160617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,9 +185,12 @@ MonoBehaviour:
   attackPos: {fileID: 1799688613511850051}
   moveSpeed: 4
   jumpSpeed: 9
-  meleeCooldown: 1
+  attackCooldown: 1
   meleeRange: 0.5
   meleeDamage: 1
+  snowball: {fileID: 5111751630021893814, guid: 374edd82459307246b27fb7d13897b58, type: 3}
+  attackForward: {x: 0, y: 0, z: 0}
+  attackBackward: {x: 0, y: 0, z: 0}
 --- !u!95 &8049197844063160617
 Animator:
   serializedVersion: 3

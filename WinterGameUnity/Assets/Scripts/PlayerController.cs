@@ -17,9 +17,11 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     private Vector3 moveChange;
     [SerializeField] private float moveSpeed, jumpSpeed;
-    [SerializeField] private float meleeCooldown, meleeRange;
+    [SerializeField] private float attackCooldown, meleeRange;
     [SerializeField] private int meleeDamage;
-    private float meleeTimer;
+    [SerializeField] private GameObject snowball;
+    private float attackTimer;
+    public Vector3 attackForward, attackBackward = Vector3.zero;
 
     private void Awake()
     {
@@ -28,6 +30,9 @@ public class PlayerController : MonoBehaviour
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        attackForward.x = Mathf.Abs(attackPos.localPosition.x);
+        attackBackward.x = -attackForward.x;
     }
 
     private void OnEnable()
@@ -48,7 +53,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         move();
-        melee();
+        attack();
         if (isGrounded()) animator.SetBool("Grounded", true);
         else animator.SetBool("Grounded", false);
     }
@@ -73,8 +78,16 @@ public class PlayerController : MonoBehaviour
         if (moveInput != 0) animator.SetBool("Walk", true);
         else animator.SetBool("Walk", false);
         // Sprite Flip
-        if (moveInput < 0) spriteRenderer.flipX = true;
-        else if (moveInput > 0) spriteRenderer.flipX = false;
+        if (moveInput < 0)
+        {
+            spriteRenderer.flipX = true;
+            attackPos.transform.localPosition = attackBackward;
+        }
+        else if (moveInput > 0)
+        {
+            spriteRenderer.flipX = false;
+            attackPos.transform.localPosition = attackForward;
+        }
     }
 
     private void jump()
@@ -112,9 +125,9 @@ public class PlayerController : MonoBehaviour
         return Physics2D.OverlapArea(topLeft, bottomRight, ground);
     }
 
-    private void melee()
+    private void attack()
     {
-        if (meleeTimer <= 0)
+        if (attackTimer <= 0)
         {
             if (controls.Player.Melee.ReadValue<float>() > 0)
             {
@@ -123,10 +136,17 @@ public class PlayerController : MonoBehaviour
                 {
                     hitEnemies[i].GetComponent<EnemyBase>().takeDamage(meleeDamage);
                 }
-                meleeTimer = meleeCooldown;
+                attackTimer = attackCooldown;
                 animator.SetTrigger("Melee");
             }
+            else if (controls.Player.Shoot.ReadValue<float>() > 0)
+            {
+                GameObject newBall = Instantiate(snowball, attackPos.position, transform.rotation);
+                if (spriteRenderer.flipX) newBall.GetComponent<SnowballScript>().moveSpeed *= -1;
+                attackTimer = attackCooldown;
+                animator.SetTrigger("Ranged");
+            }
         }
-        else meleeTimer -= Time.deltaTime;
+        else attackTimer -= Time.deltaTime;
     }
 }
