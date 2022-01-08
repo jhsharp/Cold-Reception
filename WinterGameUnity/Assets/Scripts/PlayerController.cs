@@ -20,8 +20,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float attackCooldown, meleeRange;
     [SerializeField] private int meleeDamage;
     [SerializeField] private GameObject snowball;
-    private float attackTimer;
-    public Vector3 attackForward, attackBackward = Vector3.zero;
+    [SerializeField] private float meleeDelay, shootDelay;
+    private float attackTimer, meleeDelayTimer, shootDelayTimer;
+    private bool meleeActive, shootActive = false;
+    private Vector3 attackForward, attackBackward = Vector3.zero;
 
     private void Awake()
     {
@@ -131,22 +133,44 @@ public class PlayerController : MonoBehaviour
         {
             if (controls.Player.Melee.ReadValue<float>() > 0)
             {
-                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos.position, meleeRange, enemy);
-                for (int i = 0; i < hitEnemies.Length; i++)
-                {
-                    hitEnemies[i].GetComponent<EnemyBase>().takeDamage(meleeDamage);
-                }
+                meleeDelayTimer = meleeDelay;
+                meleeActive = true;
                 attackTimer = attackCooldown;
                 animator.SetTrigger("Melee");
             }
             else if (controls.Player.Shoot.ReadValue<float>() > 0)
             {
-                GameObject newBall = Instantiate(snowball, attackPos.position, transform.rotation);
-                if (spriteRenderer.flipX) newBall.GetComponent<SnowballScript>().moveSpeed *= -1;
+                shootDelayTimer = shootDelay;
+                shootActive = true;
                 attackTimer = attackCooldown;
                 animator.SetTrigger("Ranged");
             }
         }
         else attackTimer -= Time.deltaTime;
+
+        if (meleeActive)
+        {
+            if (meleeDelayTimer <= 0)
+            {
+                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos.position, meleeRange, enemy);
+                for (int i = 0; i < hitEnemies.Length; i++)
+                {
+                    hitEnemies[i].GetComponent<EnemyBase>().takeDamage(meleeDamage);
+                }
+                meleeActive = true;
+            }
+            else meleeDelayTimer -= Time.deltaTime;
+        }
+
+        if (shootActive)
+        {
+            if (shootDelayTimer <= 0)
+            {
+                GameObject newBall = Instantiate(snowball, attackPos.position, transform.rotation);
+                if (spriteRenderer.flipX) newBall.GetComponent<SnowballScript>().moveSpeed *= -1;
+                shootActive = false;
+            }
+            else shootDelayTimer -= Time.deltaTime;
+        }
     }
 }
