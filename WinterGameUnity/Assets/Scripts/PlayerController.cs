@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour
                 {
                     hitEnemies[i].GetComponent<EnemyBase>().takeDamage(meleeDamage);
                 }
-                meleeActive = true;
+                meleeActive = false;
             }
             else meleeDelayTimer -= Time.deltaTime;
         }
