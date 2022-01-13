@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,6 +25,14 @@ public class PlayerController : MonoBehaviour
     private float attackTimer, meleeDelayTimer, shootDelayTimer;
     private bool meleeActive, shootActive = false;
     private Vector3 attackForward, attackBackward = Vector3.zero;
+
+    [SerializeField] private int health;
+
+    public GameManager gameMan;
+    private void OnLevelWasLoaded(int level)
+    {
+        gameMan = FindObjectOfType<GameManager>();
+    }
 
     private void Awake()
     {
@@ -172,5 +181,11 @@ public class PlayerController : MonoBehaviour
             }
             else shootDelayTimer -= Time.deltaTime;
         }
+    }
+
+    public void takeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0) gameMan.loadScene(SceneManager.GetActiveScene().name);
     }
 }

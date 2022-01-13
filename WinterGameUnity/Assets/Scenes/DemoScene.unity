@@ -188,6 +188,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbad9aff2c91de547a1e63e7d94660c7, type: 3}
+--- !u!1 &170116798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170116799}
+  m_Layer: 8
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &170116799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170116798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: -0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 511181133}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &186414073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5524019116520981537, guid: bbad9aff2c91de547a1e63e7d94660c7, type: 3}
@@ -212,7 +242,7 @@ GameObject:
   - component: {fileID: 511181130}
   - component: {fileID: 511181129}
   m_Layer: 7
-  m_Name: Elf (1)
+  m_Name: Melee Elf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,10 +257,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 511181128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a718f5894c4318439ae83e092f70c14, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b16b79a19967794aa48ea3571fe16f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col: {fileID: 0}
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
+  attackPos: {fileID: 170116799}
+  attackForward: {x: 0, y: 0, z: 0}
+  attackBackward: {x: 0, y: 0, z: 0}
   baseHealth: 3
+  moveSpeed: 3
+  retreatSpeed: 2
+  engageRange: 10
+  attackRange: 1
+  attackCooldown: 2
+  attackDamage: 1
+  health: 0
+  attackTimer: 0
+  player: {fileID: 0}
+  meleeRange: 0.5
+  meleeDelay: 0
 --- !u!50 &511181130
 Rigidbody2D:
   serializedVersion: 4
@@ -339,7 +389,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 19.67, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 170116799}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -537,7 +588,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.279, y: -2.043, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1286626512}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -553,7 +605,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a718f5894c4318439ae83e092f70c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col: {fileID: 0}
+  animator: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
+  attackPos: {fileID: 1286626512}
+  attackForward: {x: 0, y: 0, z: 0}
+  attackBackward: {x: 0, y: 0, z: 0}
   baseHealth: 3
+  moveSpeed: 0
+  retreatSpeed: 0
+  engageRange: 0
+  attackRange: 0
+  attackCooldown: 0
+  attackDamage: 0
+  health: 0
+  attackTimer: 0
+  player: {fileID: 0}
 --- !u!1001 &883693153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -921,6 +991,36 @@ MonoBehaviour:
   target: {fileID: 1942118006}
   smoothSpeed: 0.1
   offset: {x: 0, y: 0.75, z: -1.5}
+--- !u!1 &1286626511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1286626512}
+  m_Layer: 8
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1286626512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286626511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 798140897}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1302736470
 PrefabInstance:
   m_ObjectHideFlags: 0
