@@ -8,15 +8,15 @@ public class EnemyMelee : EnemyBase
     private float meleeDelayTimer = 0;
     private bool meleeActive = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        base.Start();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        base.Update();
         strafe();
         melee();
     }

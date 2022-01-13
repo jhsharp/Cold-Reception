@@ -18,10 +18,10 @@ public class EnemyBase : MonoBehaviour
     [HideInInspector] public float attackTimer = 0;
     [HideInInspector] public GameObject player;
 
-    void Start()
+    internal void Start()
     {
         health = baseHealth;
-        player = FindObjectOfType<PlayerController>().gameObject;
+        player = GameObject.Find("Player");
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -30,7 +30,7 @@ public class EnemyBase : MonoBehaviour
         attackBackward.x = -attackForward.x;
     }
 
-    private void Update()
+    internal void Update()
     {
         if (attackTimer > 0) attackTimer -= Time.deltaTime;
     }

@@ -270,11 +270,11 @@ MonoBehaviour:
   attackForward: {x: 0, y: 0, z: 0}
   attackBackward: {x: 0, y: 0, z: 0}
   baseHealth: 3
-  moveSpeed: 3
-  retreatSpeed: 2
+  moveSpeed: 4
+  retreatSpeed: 3
   engageRange: 10
   attackRange: 1
-  attackCooldown: 2
+  attackCooldown: 1
   attackDamage: 1
   health: 0
   attackTimer: 0
