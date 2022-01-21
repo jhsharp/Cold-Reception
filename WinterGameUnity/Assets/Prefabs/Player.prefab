@@ -191,6 +191,8 @@ MonoBehaviour:
   snowball: {fileID: 5111751630021893814, guid: 374edd82459307246b27fb7d13897b58, type: 3}
   meleeDelay: 0.15
   shootDelay: 0.25
+  health: 3
+  gameMan: {fileID: 0}
 --- !u!95 &8049197844063160617
 Animator:
   serializedVersion: 3

@@ -29,10 +29,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int health;
 
     public GameManager gameMan;
-    private void OnLevelWasLoaded(int level)
-    {
-        gameMan = FindObjectOfType<GameManager>();
-    }
 
     private void Awake()
     {
@@ -41,6 +37,8 @@ public class PlayerController : MonoBehaviour
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        gameMan = FindObjectOfType<GameManager>();
 
         attackForward.x = Mathf.Abs(attackPos.localPosition.x);
         attackBackward.x = -attackForward.x;

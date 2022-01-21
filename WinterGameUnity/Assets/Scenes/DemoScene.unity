@@ -273,14 +273,14 @@ MonoBehaviour:
   moveSpeed: 4
   retreatSpeed: 3
   engageRange: 10
-  attackRange: 1
+  attackRange: 1.5
   attackCooldown: 1
   attackDamage: 1
   health: 0
   attackTimer: 0
   player: {fileID: 0}
   meleeRange: 0.5
-  meleeDelay: 0
+  meleeDelay: 0.15
 --- !u!50 &511181130
 Rigidbody2D:
   serializedVersion: 4
