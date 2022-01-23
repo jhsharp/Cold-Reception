@@ -21,9 +21,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float attackCooldown, meleeRange;
     [SerializeField] private int meleeDamage;
     [SerializeField] private GameObject snowball;
-    [SerializeField] private float meleeDelay, shootDelay;
-    private float attackTimer, meleeDelayTimer, shootDelayTimer;
-    private bool meleeActive, shootActive = false;
+    [SerializeField] private float meleeDelay, shootDelay, deathDelay;
+    private float attackTimer, meleeDelayTimer, shootDelayTimer, deathDelayTimer;
+    private bool meleeActive, shootActive, deathActive = false;
     private Vector3 attackForward, attackBackward = Vector3.zero;
 
     [SerializeField] private int health;
@@ -61,8 +61,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        move();
-        attack();
+        if (!deathActive)
+        {
+            move();
+            attack();
+        }
+        die();
         if (isGrounded()) animator.SetBool("Grounded", true);
         else animator.SetBool("Grounded", false);
     }
@@ -184,6 +188,21 @@ public class PlayerController : MonoBehaviour
     public void takeDamage(int damage)
     {
         health -= damage;
-        if (health <= 0) gameMan.loadScene(SceneManager.GetActiveScene().name);
+        if (health <= 0)
+        {
+            animator.SetTrigger("Dead");
+            deathDelayTimer = deathDelay;
+            deathActive = true;
+        }
+        else animator.SetTrigger("Hurt");
+    }
+
+    public void die()
+    {
+        if (deathActive)
+        {
+            if (deathDelayTimer > 0) deathDelayTimer -= Time.deltaTime;
+            else gameMan.loadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

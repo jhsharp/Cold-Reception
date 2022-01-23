@@ -33,9 +33,19 @@ public class EnemyBase : MonoBehaviour
     internal void Update()
     {
         if (attackTimer > 0) attackTimer -= Time.deltaTime;
+        if (player.transform.position.x < this.transform.position.x)
+        {
+            spriteRenderer.flipX = false;
+            attackPos.transform.localPosition = attackBackward;
+        }
+        else
+        {
+            spriteRenderer.flipX = true;
+            attackPos.transform.localPosition = attackForward;
+        }
     }
 
-    public void takeDamage(int damage)
+    virtual public void takeDamage(int damage)
     {
         health -= damage;
         if (health <= 0) Destroy(this.gameObject);

@@ -14,7 +14,7 @@ TagManager:
   - Ground
   - Enemy
   - Player
-  - 
+  - Explosion
   - 
   - 
   - 
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 880725851
+    locked: 0
+  - name: Explosion
+    uniqueID: 3227485547
     locked: 0
