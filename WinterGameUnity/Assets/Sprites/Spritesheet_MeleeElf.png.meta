@@ -1,31 +1,25 @@
 fileFormatVersion: 2
-guid: 4a025ec006987874ba70f1a43855bcea
+guid: a403ace17401f4d43b37d719c614b3e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -220974786716751297
-    second: TilePropset_Factory_0
+      213: -147710408825442563
+    second: Spritesheet_MeleeElf_0
   - first:
-      213: 871416414555781207
-    second: TilePropset_Factory_1
+      213: -2911538948892503882
+    second: Spritesheet_MeleeElf_1
   - first:
-      213: 5727182010730875491
-    second: TilePropset_Factory_2
+      213: -9772492655790541
+    second: Spritesheet_MeleeElf_2
   - first:
-      213: -2871907617668740114
-    second: TilePropset_Factory_3
+      213: -6670140256046564890
+    second: Spritesheet_MeleeElf_3
   - first:
-      213: 3198260836415690007
-    second: TilePropset_Factory_4
+      213: -1712898538427214598
+    second: Spritesheet_MeleeElf_4
   - first:
-      213: 2416095072808630867
-    second: TilePropset_Factory_5
-  - first:
-      213: -274562928129582258
-    second: TilePropset_Factory_6
-  - first:
-      213: 1810593936666456542
-    second: TilePropset_Factory_7
+      213: -7711823221554966212
+    second: Spritesheet_MeleeElf_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +121,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TilePropset_Factory_0
+      name: Spritesheet_MeleeElf_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 94
-        width: 16
-        height: 16
+        x: 36
+        y: 66
+        width: 12
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +135,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3a2e6d2a90feecf0800000000000000
-      internalID: -220974786716751297
+      spriteID: dfee4507a2a33fdf0800000000000000
+      internalID: -147710408825442563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilePropset_Factory_1
+      name: Spritesheet_MeleeElf_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 94
-        width: 16
-        height: 16
+        x: 48
+        y: 66
+        width: 12
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 758ba01bc94e71c00800000000000000
-      internalID: 871416414555781207
+      spriteID: 6b05c8180c22897d0800000000000000
+      internalID: -2911538948892503882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilePropset_Factory_2
+      name: Spritesheet_MeleeElf_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 77
-        width: 16
-        height: 16
+        x: 60
+        y: 66
+        width: 12
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36a0f91e1b90b7f40800000000000000
-      internalID: 5727182010730875491
+      spriteID: 3367eae38f74ddff0800000000000000
+      internalID: -9772492655790541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilePropset_Factory_3
+      name: Spritesheet_MeleeElf_3
       rect:
         serializedVersion: 2
-        x: 81
-        y: 77
-        width: 16
-        height: 16
+        x: 72
+        y: 66
+        width: 12
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,19 +198,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eebcd1ddc3fe428d0800000000000000
-      internalID: -2871907617668740114
+      spriteID: 6e9bf4ce6c6ee63a0800000000000000
+      internalID: -6670140256046564890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilePropset_Factory_4
+      name: Spritesheet_MeleeElf_4
       rect:
         serializedVersion: 2
-        x: 98
-        y: 94
-        width: 16
+        x: 35
+        y: 32
+        width: 15
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -225,18 +219,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 715d99d1941826c20800000000000000
-      internalID: 3198260836415690007
+      spriteID: af492c8cadf8a38e0800000000000000
+      internalID: -1712898538427214598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilePropset_Factory_5
+      name: Spritesheet_MeleeElf_5
       rect:
         serializedVersion: 2
-        x: 98
-        y: 77
+        x: 50
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -246,50 +240,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35a745eeaa1b78120800000000000000
-      internalID: 2416095072808630867
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilePropset_Factory_6
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 77
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4b5858b87e803cf0800000000000000
-      internalID: -274562928129582258
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TilePropset_Factory_7
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 77
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed1fa7ba795802910800000000000000
-      internalID: 1810593936666456542
+      spriteID: c319b9493a91af490800000000000000
+      internalID: -7711823221554966212
       vertices: []
       indices: 
       edges: []
