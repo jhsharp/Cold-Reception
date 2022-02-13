@@ -67,7 +67,7 @@ public class EnemyBase : MonoBehaviour
         }
     }
 
-    public void strafe()
+    virtual public void strafe()
     {
         if (Vector3.Distance(this.transform.position, player.transform.position) <= engageRange)
         {

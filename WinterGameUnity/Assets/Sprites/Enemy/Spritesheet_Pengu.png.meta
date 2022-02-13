@@ -1,7 +1,91 @@
 fileFormatVersion: 2
 guid: 1e203374dc9aff5478a74b3fd06e3c8c
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6461889911829175513
+    second: Spritesheet_Pengu_0
+  - first:
+      213: 3801596370698164845
+    second: Spritesheet_Pengu_1
+  - first:
+      213: -6176433554231853040
+    second: Spritesheet_Pengu_2
+  - first:
+      213: -3008343746166475644
+    second: Spritesheet_Pengu_3
+  - first:
+      213: -7369779123512503132
+    second: Spritesheet_Pengu_4
+  - first:
+      213: 4153253296279421953
+    second: Spritesheet_Pengu_5
+  - first:
+      213: -1221014871306285617
+    second: Spritesheet_Pengu_6
+  - first:
+      213: -3419875336713152194
+    second: Spritesheet_Pengu_7
+  - first:
+      213: -4033882176622309107
+    second: Spritesheet_Pengu_8
+  - first:
+      213: 5304554145867526916
+    second: Spritesheet_Pengu_9
+  - first:
+      213: -7678978872434462076
+    second: Spritesheet_Pengu_10
+  - first:
+      213: -2375345672561104847
+    second: Spritesheet_Pengu_11
+  - first:
+      213: -1973588228242411112
+    second: Spritesheet_Pengu_12
+  - first:
+      213: -5980349823366116860
+    second: Spritesheet_Pengu_13
+  - first:
+      213: 1647448435573109231
+    second: Spritesheet_Pengu_14
+  - first:
+      213: -5226014206063302249
+    second: Spritesheet_Pengu_15
+  - first:
+      213: 8554372130949903940
+    second: Spritesheet_Pengu_16
+  - first:
+      213: 3114478754359513926
+    second: Spritesheet_Pengu_17
+  - first:
+      213: 5555824037232549362
+    second: Spritesheet_Pengu_18
+  - first:
+      213: -767039192487196959
+    second: Spritesheet_Pengu_19
+  - first:
+      213: -828107958704076752
+    second: Spritesheet_Pengu_20
+  - first:
+      213: -1714073748030127839
+    second: Spritesheet_Pengu_21
+  - first:
+      213: -5750547235299416468
+    second: Spritesheet_Pengu_22
+  - first:
+      213: 1055846660316995452
+    second: Spritesheet_Pengu_23
+  - first:
+      213: 3485271571695310409
+    second: Spritesheet_Pengu_24
+  - first:
+      213: 8310119223223392861
+    second: Spritesheet_Pengu_25
+  - first:
+      213: -1373929818290696707
+    second: Spritesheet_Pengu_26
+  - first:
+      213: 2810094578190942628
+    second: Spritesheet_Pengu_27
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +185,595 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 136
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723edbb9c51c256a0800000000000000
+      internalID: -6461889911829175513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_1
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 640
+        width: 104
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ad0e6e1cbf1c430800000000000000
+      internalID: 3801596370698164845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 640
+        width: 104
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01005351866e84aa0800000000000000
+      internalID: -6176433554231853040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 640
+        width: 104
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484ba7f3d473046d0800000000000000
+      internalID: -3008343746166475644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 496
+        width: 88
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a492f51fe849b990800000000000000
+      internalID: -7369779123512503132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 496
+        width: 104
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10484fa3ed153a930800000000000000
+      internalID: 4153253296279421953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 496
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.4375, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdc15a91751e0fe0800000000000000
+      internalID: -1221014871306285617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_7
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 496
+        width: 112
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39d71320892a80d0800000000000000
+      internalID: -3419875336713152194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 496
+        width: 112
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01d5a46885c408c0800000000000000
+      internalID: -4033882176622309107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_9
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 496
+        width: 104
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403724414ef8d9940800000000000000
+      internalID: 5304554145867526916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 352
+        width: 128
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48270d68669ce6590800000000000000
+      internalID: -7678978872434462076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 352
+        width: 136
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5882353, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138eb3822b3190fd0800000000000000
+      internalID: -2375345672561104847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_12
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 352
+        width: 144
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891f7b286f76c94e0800000000000000
+      internalID: -1973588228242411112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_13
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 352
+        width: 136
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5882353, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a41b95587810da0800000000000000
+      internalID: -5980349823366116860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 352
+        width: 104
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1bb14af99ecd610800000000000000
+      internalID: 1647448435573109231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 208
+        width: 120
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799a378a4c77977b0800000000000000
+      internalID: -5226014206063302249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 208
+        width: 104
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44635cd412c37b670800000000000000
+      internalID: 8554372130949903940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 208
+        width: 96
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5833333, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64399160de9d83b20800000000000000
+      internalID: 3114478754359513926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 208
+        width: 88
+        height: 120
+      alignment: 9
+      pivot: {x: 0.6363636, y: 0.46666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd92dd96804a1d40800000000000000
+      internalID: 5555824037232549362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_19
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 208
+        width: 120
+        height: 112
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e68ffa1bedea55f0800000000000000
+      internalID: -767039192487196959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_20
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 208
+        width: 160
+        height: 56
+      alignment: 9
+      pivot: {x: 0.7, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03805c5f238f184f0800000000000000
+      internalID: -828107958704076752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_21
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 271
+        width: 104
+        height: 97
+      alignment: 9
+      pivot: {x: 0.6923077, y: 0.57731956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12187d9f1036638e0800000000000000
+      internalID: -1714073748030127839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_22
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 256
+        width: 128
+        height: 120
+      alignment: 9
+      pivot: {x: 0.625, y: 0.53333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66afd7d1c3f130b0800000000000000
+      internalID: -5750547235299416468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_23
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 240
+        width: 144
+        height: 152
+      alignment: 9
+      pivot: {x: 0.6111111, y: 0.47368422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f1a7581fe17ae00800000000000000
+      internalID: 1055846660316995452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_24
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 8
+        width: 200
+        height: 200
+      alignment: 9
+      pivot: {x: 0.68, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9469aa8570c2e5030800000000000000
+      internalID: 3485271571695310409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_25
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 560
+        width: 152
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a10659769735370800000000000000
+      internalID: 8310119223223392861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_26
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 496
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd47721c12deece0800000000000000
+      internalID: -1373929818290696707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_Pengu_27
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 496
+        width: 40
+        height: 56
+      alignment: 9
+      pivot: {x: 0.5, y: 0.42857146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1825e51267ff620800000000000000
+      internalID: 2810094578190942628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
