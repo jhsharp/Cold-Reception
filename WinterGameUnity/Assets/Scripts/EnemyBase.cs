@@ -7,6 +7,7 @@ public class EnemyBase : MonoBehaviour
     [HideInInspector] public Collider2D col;
     [HideInInspector] public Animator animator;
     [HideInInspector] public SpriteRenderer spriteRenderer;
+    [HideInInspector] public Rigidbody2D rb;
     public LayerMask ground;
     public Transform attackPos;
     [HideInInspector] public Vector3 attackForward, attackBackward = Vector3.zero;
@@ -26,6 +27,7 @@ public class EnemyBase : MonoBehaviour
         col = GetComponent<Collider2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
 
         attackForward.x = Mathf.Abs(attackPos.localPosition.x);
         attackBackward.x = -attackForward.x;
@@ -59,6 +61,8 @@ public class EnemyBase : MonoBehaviour
             deathActive = true;
             deathDelayTimer = deathDelay;
             col.enabled = false;
+            rb.gravityScale = 0;
+
             animator.SetTrigger("Dead");
         }
     }
