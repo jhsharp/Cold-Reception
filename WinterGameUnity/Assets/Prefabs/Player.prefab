@@ -192,7 +192,7 @@ MonoBehaviour:
   meleeDelay: 0.15
   shootDelay: 0.25
   deathDelay: 1
-  health: 3
+  health: 1
   gameMan: {fileID: 0}
 --- !u!95 &8049197844063160617
 Animator:

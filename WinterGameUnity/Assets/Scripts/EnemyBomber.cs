@@ -17,8 +17,11 @@ public class EnemyBomber : EnemyBase
     private void Update()
     {
         base.Update();
-        strafe();
-        explode();
+        if (!deathActive)
+        {
+            strafe();
+            explode();
+        }
     }
 
     private void OnDrawGizmosSelected()
@@ -34,7 +37,6 @@ public class EnemyBomber : EnemyBase
         if (!explodeActive && Vector3.Distance(this.transform.position, player.transform.position) <= attackRange)
         {
             explodeActive = true;
-            /*animator.SetTrigger("Explode");*/
         }
 
         if (explodeActive)
@@ -52,9 +54,10 @@ public class EnemyBomber : EnemyBase
     override public void takeDamage(int damage)
     {
         health -= damage;
+        animator.SetTrigger("Hurt");
         if (health <= 0)
         {
-            GameObject explode = Instantiate(explosion);
+            GameObject explode = Instantiate(explosion, attackPos.position, attackPos.rotation);
             explode.GetComponent<ExplosionScript>().damage = attackDamage;
             Destroy(this.gameObject);
         }

@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5866040854877309228}
   - component: {fileID: 5866040854877309229}
   - component: {fileID: 5866040854877309219}
+  - component: {fileID: 6098709020670443430}
   m_Layer: 7
   m_Name: Ranged Elf
   m_TagString: Untagged
@@ -105,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 54c9089f75018094986dd31bc15d15d7, type: 3}
+  m_Sprite: {fileID: 2355043054547292609, guid: 00c15a46d099aa144b069ef7a0280530, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,18 +130,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.030634046}
+  m_Offset: {x: 0.039995193, y: -0.0783236}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    pivot: {x: 0.45454547, y: 0.5625}
+    oldSize: {x: 0.88, y: 1.28}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 1.2187319}
+  m_Size: {x: 0.8767624, y: 1.2825825}
   m_EdgeRadius: 0
 --- !u!50 &5866040854877309229
 Rigidbody2D:
@@ -190,9 +191,31 @@ MonoBehaviour:
   engageRange: 15
   attackRange: 15
   attackCooldown: 1.5
+  deathDelay: 0.5
   attackDamage: 1
   health: 0
   attackTimer: 0
+  deathDelayTimer: 0
+  deathActive: 0
   player: {fileID: 0}
   fireball: {fileID: 5788689271273175231, guid: fbdecc804dab51f45a35b7d4fddefba4, type: 3}
   shootDelay: 0.15
+--- !u!95 &6098709020670443430
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866040854877309216}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bc218bf77701bbe468535c237a91866f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

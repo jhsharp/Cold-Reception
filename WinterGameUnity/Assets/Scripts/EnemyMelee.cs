@@ -17,8 +17,11 @@ public class EnemyMelee : EnemyBase
     private void Update()
     {
         base.Update();
-        strafe();
-        melee();
+        if (!deathActive)
+        {
+            strafe();
+            melee();
+        }
     }
 
     private void OnDrawGizmosSelected()
@@ -31,11 +34,11 @@ public class EnemyMelee : EnemyBase
 
     private void melee()
     {
-        if (attackTimer <= 0 && !meleeActive && Vector3.Distance(this.transform.position, player.transform.position) <= attackRange)
+        if (attackTimer <= 0 && !meleeActive && Mathf.Abs(this.transform.position.x - player.transform.position.x) <= attackRange)
         {
             meleeDelayTimer = meleeDelay;
             meleeActive = true;
-            /*animator.SetTrigger("Melee");*/
+            animator.SetTrigger("Attack");
         }
 
         if (meleeActive)

@@ -18,7 +18,7 @@ public class EnemyRanged : EnemyBase
     private void Update()
     {
         base.Update();
-        shoot();
+        if (!deathActive) shoot();
     }
 
     private void OnDrawGizmosSelected()
@@ -34,7 +34,7 @@ public class EnemyRanged : EnemyBase
             shootDelayTimer = shootDelay;
             shootActive = true;
             attackTimer = attackCooldown;
-            //animator.SetTrigger("Ranged");
+            animator.SetTrigger("Attack");
         }
 
         if (shootActive)

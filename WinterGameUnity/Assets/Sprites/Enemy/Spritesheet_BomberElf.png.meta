@@ -1,0 +1,480 @@
+fileFormatVersion: 2
+guid: aba89cba489d49e449a93b873444a151
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6765347482869041530
+    second: Spritesheet_BomberElf_0
+  - first:
+      213: -8954087067941794736
+    second: Spritesheet_BomberElf_1
+  - first:
+      213: 4806571342194961603
+    second: Spritesheet_BomberElf_2
+  - first:
+      213: 1874340697584178855
+    second: Spritesheet_BomberElf_3
+  - first:
+      213: -7228692469290662029
+    second: Spritesheet_BomberElf_4
+  - first:
+      213: 634039057145599761
+    second: Spritesheet_BomberElf_5
+  - first:
+      213: -6555505682526989088
+    second: Spritesheet_BomberElf_6
+  - first:
+      213: -6068958125679352718
+    second: Spritesheet_BomberElf_7
+  - first:
+      213: -8796446824260098007
+    second: Spritesheet_BomberElf_8
+  - first:
+      213: -9156947950556272430
+    second: Spritesheet_BomberElf_9
+  - first:
+      213: -6939096900693515964
+    second: Spritesheet_BomberElf_10
+  - first:
+      213: 5420719124976779719
+    second: Spritesheet_BomberElf_11
+  - first:
+      213: 8091197055291929762
+    second: Spritesheet_BomberElf_12
+  - first:
+      213: -2275612098148493042
+    second: Spritesheet_BomberElf_13
+  - first:
+      213: 1389893477525608155
+    second: Spritesheet_BomberElf_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 552
+        width: 136
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a790e7af0b753ed50800000000000000
+      internalID: 6765347482869041530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 552
+        width: 88
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c0963a041bcb380800000000000000
+      internalID: -8954087067941794736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 552
+        width: 88
+        height: 136
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc6a1f5b2f54b240800000000000000
+      internalID: 4806571342194961603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_3
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 552
+        width: 88
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6109b0feef20a10800000000000000
+      internalID: 1874340697584178855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_4
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 552
+        width: 88
+        height: 136
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37783699f768eab90800000000000000
+      internalID: -7228692469290662029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 408
+        width: 104
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11713e6c92f8cc800800000000000000
+      internalID: 634039057145599761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_6
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 408
+        width: 88
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e49ce5705a2605a0800000000000000
+      internalID: -6555505682526989088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_7
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 272
+        width: 136
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274692a4dbab6cba0800000000000000
+      internalID: -6068958125679352718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_8
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 272
+        width: 88
+        height: 120
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9282d5a083ebce580800000000000000
+      internalID: -8796446824260098007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_9
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 328
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d82a54ca5cfbe080800000000000000
+      internalID: -9156947950556272430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_10
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 288
+        width: 152
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441262c322063bf90800000000000000
+      internalID: -6939096900693515964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_11
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 272
+        width: 192
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1486fe2534a3b40800000000000000
+      internalID: 5420719124976779719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_12
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 8
+        width: 208
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4bc505ad4b94070800000000000000
+      internalID: 8091197055291929762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_13
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 32
+        width: 192
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09174b7ad66b60e0800000000000000
+      internalID: -2275612098148493042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_BomberElf_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 56
+        width: 120
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6db8bf0c4e94310800000000000000
+      internalID: 1389893477525608155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

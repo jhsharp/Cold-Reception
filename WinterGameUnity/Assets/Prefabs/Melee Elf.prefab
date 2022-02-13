@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 5557954732323158252}
   - component: {fileID: 5557954732323158253}
   - component: {fileID: 5557954732323158254}
+  - component: {fileID: 494887457145550458}
   m_Layer: 7
   m_Name: Melee Elf
   m_TagString: Untagged
@@ -105,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 54c9089f75018094986dd31bc15d15d7, type: 3}
+  m_Sprite: {fileID: -2911538948892503882, guid: a403ace17401f4d43b37d719c614b3e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,18 +130,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.030634046}
+  m_Offset: {x: 0.039823532, y: -0.07942325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    pivot: {x: 0.45454547, y: 0.5625}
+    oldSize: {x: 0.88, y: 1.28}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 1.2187319}
+  m_Size: {x: 0.8771858, y: 1.2807292}
   m_EdgeRadius: 0
 --- !u!50 &5557954732323158253
 Rigidbody2D:
@@ -190,9 +191,31 @@ MonoBehaviour:
   engageRange: 10
   attackRange: 1.5
   attackCooldown: 1
+  deathDelay: 0.5
   attackDamage: 1
   health: 0
   attackTimer: 0
+  deathDelayTimer: 0
+  deathActive: 0
   player: {fileID: 0}
   meleeRange: 0.5
   meleeDelay: 0.15
+--- !u!95 &494887457145550458
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5557954732323158255}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5ef24b9eaa17b04a97d1ffdc13eac5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

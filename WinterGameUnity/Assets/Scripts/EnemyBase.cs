@@ -12,10 +12,11 @@ public class EnemyBase : MonoBehaviour
     [HideInInspector] public Vector3 attackForward, attackBackward = Vector3.zero;
 
     public int baseHealth;
-    public float moveSpeed, retreatSpeed, engageRange, attackRange, attackCooldown;
+    public float moveSpeed, retreatSpeed, engageRange, attackRange, attackCooldown, deathDelay;
     public int attackDamage;
     [HideInInspector] public int health;
-    [HideInInspector] public float attackTimer = 0;
+    [HideInInspector] public float attackTimer = 0, deathDelayTimer = 0;
+    [HideInInspector] public bool deathActive = false;
     [HideInInspector] public GameObject player;
 
     internal void Start()
@@ -32,23 +33,34 @@ public class EnemyBase : MonoBehaviour
 
     internal void Update()
     {
-        if (attackTimer > 0) attackTimer -= Time.deltaTime;
-        if (player.transform.position.x < this.transform.position.x)
+        if (!deathActive)
         {
-            spriteRenderer.flipX = false;
-            attackPos.transform.localPosition = attackBackward;
+            if (attackTimer > 0) attackTimer -= Time.deltaTime;
+            if (player.transform.position.x < this.transform.position.x)
+            {
+                spriteRenderer.flipX = false;
+                attackPos.transform.localPosition = attackBackward;
+            }
+            else
+            {
+                spriteRenderer.flipX = true;
+                attackPos.transform.localPosition = attackForward;
+            }
         }
-        else
-        {
-            spriteRenderer.flipX = true;
-            attackPos.transform.localPosition = attackForward;
-        }
+        else die();
     }
 
     virtual public void takeDamage(int damage)
     {
         health -= damage;
-        if (health <= 0) Destroy(this.gameObject);
+        animator.SetTrigger("Hurt");
+        if (health <= 0)
+        {
+            deathActive = true;
+            deathDelayTimer = deathDelay;
+            col.enabled = false;
+            animator.SetTrigger("Dead");
+        }
     }
 
     public void strafe()
@@ -58,25 +70,28 @@ public class EnemyBase : MonoBehaviour
             Vector3 moveChange = Vector3.zero;
             if (attackTimer <= 0) moveChange.x = Mathf.Sign(player.transform.position.x - this.transform.position.x) * moveSpeed * Time.deltaTime;
             else moveChange.x = Mathf.Sign(this.transform.position.x - player.transform.position.x) * retreatSpeed * Time.deltaTime;
-            transform.position += moveChange;
+            
             // Check for wall collisions
-            if (collideWalls()) transform.position -= moveChange;
-            moveChange = Vector3.zero;
-           /* // Animation
-            animator.SetBool("Walk", true);
-            else animator.SetBool("Walk", false);*/
+            if (collideWalls()) moveChange = Vector3.zero;
+            transform.position += moveChange;
+
+            // Animation
+            if (moveChange != Vector3.zero) animator.SetBool("Walk", true);
+            else animator.SetBool("Walk", false);
+
             // Sprite Flip
-            if (moveChange.x < 0)
-            {
-                spriteRenderer.flipX = true;
-                attackPos.transform.localPosition = attackBackward;
-            }
-            else if (moveChange.x > 0)
+            if (player.transform.position.x < this.transform.position.x)
             {
                 spriteRenderer.flipX = false;
+                attackPos.transform.localPosition = attackBackward;
+            }
+            else
+            {
+                spriteRenderer.flipX = true;
                 attackPos.transform.localPosition = attackForward;
             }
         }
+        else animator.SetBool("Walk", false);
     }
 
     public bool collideWalls()
@@ -90,5 +105,14 @@ public class EnemyBase : MonoBehaviour
         bottomRight.y -= col.bounds.extents.y - 0.1f;
 
         return Physics2D.OverlapArea(topLeft, bottomRight, ground);
+    }
+
+    public void die()
+    {
+        if (deathActive)
+        {
+            if (deathDelayTimer > 0) deathDelayTimer -= Time.deltaTime;
+            else Destroy(this.gameObject);
+        }
     }
 }

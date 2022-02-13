@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 00c15a46d099aa144b069ef7a0280530
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3290205192072193978
+    second: Spritesheet_RangedElf_0
+  - first:
+      213: 2355043054547292609
+    second: Spritesheet_RangedElf_1
+  - first:
+      213: 7802426843598293711
+    second: Spritesheet_RangedElf_2
+  - first:
+      213: 807762602044161376
+    second: Spritesheet_RangedElf_3
+  - first:
+      213: -7977551674355802216
+    second: Spritesheet_RangedElf_4
+  - first:
+      213: -4473273362201150035
+    second: Spritesheet_RangedElf_5
+  - first:
+      213: -1345305291733790668
+    second: Spritesheet_RangedElf_6
+  - first:
+      213: 6992632131953150941
+    second: Spritesheet_RangedElf_7
+  - first:
+      213: -2502359703803192192
+    second: Spritesheet_RangedElf_8
+  - first:
+      213: 5977101952823922965
+    second: Spritesheet_RangedElf_9
+  - first:
+      213: 6901322312930365389
+    second: Spritesheet_RangedElf_10
+  - first:
+      213: -6930065979195053582
+    second: Spritesheet_RangedElf_11
+  - first:
+      213: 3321072241099364988
+    second: Spritesheet_RangedElf_12
+  - first:
+      213: -4922310880858808993
+    second: Spritesheet_RangedElf_13
+  - first:
+      213: 372319047804258451
+    second: Spritesheet_RangedElf_14
+  - first:
+      213: 6647561920987486563
+    second: Spritesheet_RangedElf_15
+  - first:
+      213: 3644886361284357256
+    second: Spritesheet_RangedElf_16
+  - first:
+      213: 1496954748106751406
+    second: Spritesheet_RangedElf_17
+  - first:
+      213: 4120621853904503231
+    second: Spritesheet_RangedElf_18
+  - first:
+      213: 2694571941159950035
+    second: Spritesheet_RangedElf_19
+  - first:
+      213: -7876639164143568769
+    second: Spritesheet_RangedElf_20
+  - first:
+      213: 3227466660523850879
+    second: Spritesheet_RangedElf_21
+  - first:
+      213: -8254763749545954575
+    second: Spritesheet_RangedElf_22
+  - first:
+      213: 8496545536240348720
+    second: Spritesheet_RangedElf_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 528
+        width: 136
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7eb9f903829ad20800000000000000
+      internalID: 3290205192072193978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_1
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 528
+        width: 88
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1da093e2bcea020800000000000000
+      internalID: 2355043054547292609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 528
+        width: 88
+        height: 136
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca06ae00e9c74c60800000000000000
+      internalID: 7802426843598293711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_3
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 528
+        width: 88
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06dffad8ecfb53b00800000000000000
+      internalID: 807762602044161376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 528
+        width: 88
+        height: 136
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f13b0e40b0a4190800000000000000
+      internalID: -7977551674355802216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 392
+        width: 104
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad78c6d39dbbe1c0800000000000000
+      internalID: -4473273362201150035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 392
+        width: 88
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43011c307f3845de0800000000000000
+      internalID: -1345305291733790668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 256
+        width: 88
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbcc0e10e1da0160800000000000000
+      internalID: 6992632131953150941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 88
+        height: 128
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c1f828b15d54dd0800000000000000
+      internalID: -2502359703803192192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_9
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 96
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5111d5cde8ee2f250800000000000000
+      internalID: 5977101952823922965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_10
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 256
+        width: 96
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf01be241c66cf50800000000000000
+      internalID: 6901322312930365389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_11
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 256
+        width: 120
+        height: 128
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f92f0085b573df90800000000000000
+      internalID: -6930065979195053582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a53248b91d61e20800000000000000
+      internalID: 3321072241099364988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_13
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 256
+        width: 112
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dde58555070bbb0800000000000000
+      internalID: -4922310880858808993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_14
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 256
+        width: 104
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53846157, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3980c7b833eba2500800000000000000
+      internalID: 372319047804258451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_15
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 256
+        width: 96
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3695fdac852e04c50800000000000000
+      internalID: 6647561920987486563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 128
+        width: 136
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c250b85dc359230800000000000000
+      internalID: 3644886361284357256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_17
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 128
+        width: 88
+        height: 120
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadbcb5896046c410800000000000000
+      internalID: 1496954748106751406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 120
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb180bf7eb36f2930800000000000000
+      internalID: 4120621853904503231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_19
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 88
+        height: 120
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d6d29e67ea056520800000000000000
+      internalID: 2694571941159950035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_20
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 88
+        height: 112
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.6428572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78fa45996e80b290800000000000000
+      internalID: -7876639164143568769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_21
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 88
+        height: 96
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cb0f0f3d34acc20800000000000000
+      internalID: 3227466660523850879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_22
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 104
+        height: 104
+      alignment: 9
+      pivot: {x: 0.3846154, y: 0.6923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2ba8bfa10317d80800000000000000
+      internalID: -8254763749545954575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spritesheet_RangedElf_23
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 96
+        height: 80
+      alignment: 9
+      pivot: {x: 0.4166667, y: 0.90000004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e6989062bc9e570800000000000000
+      internalID: 8496545536240348720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
