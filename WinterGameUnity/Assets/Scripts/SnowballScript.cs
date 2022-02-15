@@ -34,6 +34,7 @@ public class SnowballScript : MonoBehaviour
         {
             col.GetComponent<EnemyBase>().takeDamage(damage);
         }
+        if (col.GetComponent<BarrelScript>() != null) col.GetComponent<BarrelScript>().explode();
         if (col.gameObject.layer != LayerMask.NameToLayer("Player") && col.gameObject.layer != LayerMask.NameToLayer("Snowball")) Destroy(this.gameObject);
     }
 }

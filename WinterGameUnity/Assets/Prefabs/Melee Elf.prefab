@@ -188,14 +188,17 @@ MonoBehaviour:
   attackBackward: {x: 0, y: 0, z: 0}
   baseHealth: 3
   moveSpeed: 4
-  retreatSpeed: 3
+  retreatSpeed: 2
   engageRange: 10
   attackRange: 1.5
   attackCooldown: 1
+  kickRange: 0.3
+  kickDelay: 0.5
   deathDelay: 0.5
   attackDamage: 1
   health: 0
   attackTimer: 0
+  kickTimer: 0
   deathDelayTimer: 0
   deathActive: 0
   player: {fileID: 0}

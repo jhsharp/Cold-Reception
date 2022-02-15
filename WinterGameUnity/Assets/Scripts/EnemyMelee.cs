@@ -16,6 +16,11 @@ public class EnemyMelee : EnemyBase
     // Update is called once per frame
     private void Update()
     {
+        if (kickTimer > 0)
+        {
+            kick();
+            return;
+        }
         base.Update();
         if (!deathActive)
         {
@@ -30,6 +35,8 @@ public class EnemyMelee : EnemyBase
         Gizmos.DrawWireSphere(attackPos.position, meleeRange);
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, engageRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position + new Vector3(-kickRange, 0, 0), kickRange);
     }
 
     private void melee()

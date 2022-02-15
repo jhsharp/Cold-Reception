@@ -176,12 +176,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cccae6115a0426d49a1b14866019d344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
   enemy:
     serializedVersion: 2
     m_Bits: 128
+  barrel:
+    serializedVersion: 2
+    m_Bits: 2048
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
   attackPos: {fileID: 1799688613511850051}
   moveSpeed: 4
   jumpSpeed: 9
@@ -192,7 +195,7 @@ MonoBehaviour:
   meleeDelay: 0.15
   shootDelay: 0.25
   deathDelay: 1
-  health: 1
+  health: 3
   gameMan: {fileID: 0}
 --- !u!95 &8049197844063160617
 Animator:

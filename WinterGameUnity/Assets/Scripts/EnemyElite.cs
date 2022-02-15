@@ -17,6 +17,11 @@ public class EnemyElite : EnemyBase
     // Update is called once per frame
     private void Update()
     {
+        if (kickTimer > 0)
+        {
+            kick();
+            return;
+        }
         base.Update();
         if (!deathActive)
         {
@@ -31,6 +36,8 @@ public class EnemyElite : EnemyBase
         Gizmos.DrawWireSphere(attackPos.position, retreatRange);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, engageRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position + new Vector3(-kickRange, 0, 0), kickRange);
     }
 
     override public void strafe()

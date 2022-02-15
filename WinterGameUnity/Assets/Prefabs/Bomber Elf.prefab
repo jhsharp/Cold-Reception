@@ -179,6 +179,7 @@ MonoBehaviour:
   col: {fileID: 0}
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
   ground:
     serializedVersion: 2
     m_Bits: 64
@@ -191,10 +192,13 @@ MonoBehaviour:
   engageRange: 10
   attackRange: 1.5
   attackCooldown: 0
+  kickRange: 0.3
+  kickDelay: 0.5
   deathDelay: 0.5
-  attackDamage: 3
+  attackDamage: 2
   health: 0
   attackTimer: 0
+  kickTimer: 0
   deathDelayTimer: 0
   deathActive: 0
   player: {fileID: 0}

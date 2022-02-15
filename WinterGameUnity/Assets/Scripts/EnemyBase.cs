@@ -13,10 +13,10 @@ public class EnemyBase : MonoBehaviour
     [HideInInspector] public Vector3 attackForward, attackBackward = Vector3.zero;
 
     public int baseHealth;
-    public float moveSpeed, retreatSpeed, engageRange, attackRange, attackCooldown, deathDelay;
+    public float moveSpeed, retreatSpeed, engageRange, attackRange, attackCooldown, kickRange, kickDelay, deathDelay;
     public int attackDamage;
     [HideInInspector] public int health;
-    [HideInInspector] public float attackTimer = 0, deathDelayTimer = 0;
+    [HideInInspector] public float attackTimer = 0, kickTimer = 0, deathDelayTimer = 0;
     [HideInInspector] public bool deathActive = false;
     [HideInInspector] public GameObject player;
 
@@ -35,6 +35,11 @@ public class EnemyBase : MonoBehaviour
 
     internal void Update()
     {
+        if (kickTimer > 0)
+        {
+            kick();
+            return;
+        }
         if (!deathActive)
         {
             if (attackTimer > 0) attackTimer -= Time.deltaTime;
@@ -48,6 +53,7 @@ public class EnemyBase : MonoBehaviour
                 spriteRenderer.flipX = true;
                 attackPos.transform.localPosition = attackForward;
             }
+            kick();
         }
         else die();
     }
@@ -97,6 +103,27 @@ public class EnemyBase : MonoBehaviour
         }
         else animator.SetBool("Walk", false);
     }
+
+    public void kick()
+    {
+        if (kickTimer <= 0 && Vector3.Distance(this.transform.position, player.transform.position) <= engageRange)
+        {
+            Collider2D[] kickBarrels;
+            if (spriteRenderer.flipX) kickBarrels = Physics2D.OverlapCircleAll(transform.position + new Vector3(kickRange, 0, 0), kickRange, player.GetComponent<PlayerController>().barrel);
+            else kickBarrels = Physics2D.OverlapCircleAll(transform.position + new Vector3(-kickRange, 0, 0), kickRange, player.GetComponent<PlayerController>().barrel);
+            for (int i = 0; i < kickBarrels.Length; i++)
+            {
+                if (!kickBarrels[i].GetComponent<BarrelScript>().rolling)
+                {
+                    if (!spriteRenderer.flipX) kickBarrels[i].GetComponent<BarrelScript>().push(-1);
+                    else kickBarrels[i].GetComponent<BarrelScript>().push(1);
+                    kickTimer = kickDelay;
+                    animator.SetTrigger("Kick");
+                }
+            }
+        }
+        else if (kickTimer > 0) kickTimer -= Time.deltaTime;
+    }    
 
     public bool collideWalls()
     {

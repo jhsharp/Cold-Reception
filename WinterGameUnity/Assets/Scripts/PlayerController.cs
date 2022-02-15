@@ -11,8 +11,9 @@ public class PlayerController : MonoBehaviour
     private Collider2D col;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
-    [SerializeField] private LayerMask ground;
-    [SerializeField] private LayerMask enemy;
+    public LayerMask enemy;
+    public LayerMask barrel;
+    public LayerMask ground;
     [SerializeField] private Transform attackPos;
 
     private float moveInput;
@@ -122,7 +123,7 @@ public class PlayerController : MonoBehaviour
         bottomRight.x += col.bounds.extents.x;
         bottomRight.y -= col.bounds.extents.y;
 
-        return Physics2D.OverlapArea(topLeft, bottomRight, ground);
+        return (Physics2D.OverlapArea(topLeft, bottomRight, ground) || Physics2D.OverlapArea(topLeft, bottomRight, enemy) || Physics2D.OverlapArea(topLeft, bottomRight, barrel));
     }
 
     private bool collideWalls()
@@ -168,6 +169,14 @@ public class PlayerController : MonoBehaviour
                 {
                     hitEnemies[i].GetComponent<EnemyBase>().takeDamage(meleeDamage);
                 }
+
+                Collider2D[] hitBarrels = Physics2D.OverlapCircleAll(attackPos.position, meleeRange, barrel);
+                for (int i = 0; i < hitBarrels.Length; i++)
+                {
+                    if (spriteRenderer.flipX) hitBarrels[i].GetComponent<BarrelScript>().push(-1);
+                    else hitBarrels[i].GetComponent<BarrelScript>().push(1);
+                }
+
                 meleeActive = false;
             }
             else meleeDelayTimer -= Time.deltaTime;

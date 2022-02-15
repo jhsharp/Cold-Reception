@@ -16,6 +16,11 @@ public class EnemyBomber : EnemyBase
     // Update is called once per frame
     private void Update()
     {
+        if (kickTimer > 0)
+        {
+            kick();
+            return;
+        }
         base.Update();
         if (!deathActive)
         {
@@ -30,6 +35,8 @@ public class EnemyBomber : EnemyBase
         Gizmos.DrawWireSphere(transform.position, engageRange);
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, explosion.GetComponent<ExplosionScript>().damageRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position + new Vector3(-kickRange, 0, 0), kickRange);
     }
 
     private void explode()

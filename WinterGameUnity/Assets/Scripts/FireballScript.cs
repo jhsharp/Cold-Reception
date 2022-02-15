@@ -34,6 +34,7 @@ public class FireballScript : MonoBehaviour
         {
             col.GetComponent<PlayerController>().takeDamage(damage);
         }
+        if (col.GetComponent<BarrelScript>() != null) col.GetComponent<BarrelScript>().explode();
         if (col.gameObject.layer != LayerMask.NameToLayer("Enemy")) Destroy(this.gameObject);
     }
 }

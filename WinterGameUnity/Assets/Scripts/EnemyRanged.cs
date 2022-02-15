@@ -17,6 +17,11 @@ public class EnemyRanged : EnemyBase
     // Update is called once per frame
     private void Update()
     {
+        if (kickTimer > 0)
+        {
+            kick();
+            return;
+        }
         base.Update();
         if (!deathActive) shoot();
     }
@@ -25,6 +30,8 @@ public class EnemyRanged : EnemyBase
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, engageRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position + new Vector3(-kickRange, 0, 0), kickRange);
     }
 
     private void shoot()

@@ -179,22 +179,26 @@ MonoBehaviour:
   col: {fileID: 0}
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
+  rb: {fileID: 0}
   ground:
     serializedVersion: 2
     m_Bits: 64
   attackPos: {fileID: 5866040854345943006}
   attackForward: {x: 0, y: 0, z: 0}
   attackBackward: {x: 0, y: 0, z: 0}
-  baseHealth: 3
+  baseHealth: 2
   moveSpeed: 0
   retreatSpeed: 0
   engageRange: 15
   attackRange: 15
-  attackCooldown: 1.5
+  attackCooldown: 2.5
+  kickRange: 0.3
+  kickDelay: 0.5
   deathDelay: 0.5
   attackDamage: 1
   health: 0
   attackTimer: 0
+  kickTimer: 0
   deathDelayTimer: 0
   deathActive: 0
   player: {fileID: 0}
