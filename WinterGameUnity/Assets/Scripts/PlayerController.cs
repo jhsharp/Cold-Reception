@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
 
     private void jump()
     {
-        if (isGrounded())
+        if (isGrounded() && !deathActive)
         {
             rb.AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
             animator.SetTrigger("Jump");
@@ -202,6 +202,7 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Dead");
             deathDelayTimer = deathDelay;
             deathActive = true;
+            rb.gravityScale = 5;
         }
         else animator.SetTrigger("Hurt");
     }

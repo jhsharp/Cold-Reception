@@ -192,6 +192,7 @@ MonoBehaviour:
   meleeRange: 0.5
   meleeDamage: 1
   snowball: {fileID: 5111751630021893814, guid: 374edd82459307246b27fb7d13897b58, type: 3}
+  jumpDelay: 0.25
   meleeDelay: 0.15
   shootDelay: 0.25
   deathDelay: 1
