@@ -5332,6 +5332,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8510594049527898320, guid: b64d0ad796a61114d84fd6ee4ed1671b, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8510594049527898320, guid: b64d0ad796a61114d84fd6ee4ed1671b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
     - target: {fileID: 8510594049527898321, guid: b64d0ad796a61114d84fd6ee4ed1671b, type: 3}
       propertyPath: m_SortingLayer
       value: 1
