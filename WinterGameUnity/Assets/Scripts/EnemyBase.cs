@@ -80,10 +80,14 @@ public class EnemyBase : MonoBehaviour
             Vector3 moveChange = Vector3.zero;
             if (attackTimer <= 0) moveChange.x = Mathf.Sign(player.transform.position.x - this.transform.position.x) * moveSpeed * Time.deltaTime;
             else moveChange.x = Mathf.Sign(this.transform.position.x - player.transform.position.x) * retreatSpeed * Time.deltaTime;
-            
-            // Check for wall collisions
-            if (collideWalls()) moveChange = Vector3.zero;
             transform.position += moveChange;
+
+            // Check for wall collisions
+            if (collideWalls())
+            {
+                transform.position -= moveChange;
+                moveChange = Vector3.zero;
+            }
 
             // Animation
             if (moveChange != Vector3.zero) animator.SetBool("Walk", true);
