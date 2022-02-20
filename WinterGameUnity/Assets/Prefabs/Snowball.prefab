@@ -158,3 +158,4 @@ MonoBehaviour:
   fallTime: 1
   fallSpeed: 0.5
   damage: 1
+  fakeSnowball: {fileID: 5111751630021893814, guid: 801c8289305023348bc226b374d746e5, type: 3}
