@@ -23,6 +23,15 @@ public class BarrelScript : MonoBehaviour
         if (rolling)
         {
             transform.position += new Vector3(rollSpeed * direction * Time.deltaTime, 0, 0);
+            if (direction == 1)
+            {
+                transform.GetChild(0).transform.Rotate(100 * rollSpeed * Vector3.back * Time.deltaTime);
+            }
+            else
+            {
+                transform.GetChild(0).transform.Rotate(100 * rollSpeed * Vector3.forward * Time.deltaTime);
+            }
+            
             if (collideWalls()) explode();
 
         }
@@ -38,8 +47,10 @@ public class BarrelScript : MonoBehaviour
         rolling = true;
         direction = dir;
         transform.position += new Vector3(rollSpeed * direction * Time.deltaTime, 0, 0);
-        if (direction == 1) animator.SetTrigger("Right");
-        else animator.SetTrigger("Left");
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.transform.GetChild(0).gameObject.active = true;
+        //if (direction == 1) animator.SetTrigger("Right");
+        //else animator.SetTrigger("Left");
     }
 
     public void explode()

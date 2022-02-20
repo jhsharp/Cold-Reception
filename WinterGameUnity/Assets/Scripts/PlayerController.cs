@@ -31,6 +31,11 @@ public class PlayerController : MonoBehaviour
 
     public GameManager gameMan;
 
+    public GameObject heart1;
+    public GameObject heart2;
+    public GameObject heart3;
+
+
     private void Awake()
     {
         controls = new PlayerControls();
@@ -196,15 +201,44 @@ public class PlayerController : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        health -= damage;
+       // health -= damage;
+        animator.SetTrigger("Hurt");
+        for (int i = 0;  i < damage; i++ ){
+            health -= 1;
+        
+        if (health == 5)
+        {
+            heart1.GetComponent<HeartScript>().NextSprite();
+        }
+        else if (health == 4)
+        {
+            heart1.GetComponent<HeartScript>().NextSprite();
+        }
+        else if (health == 3)
+        {
+           
+            heart2.GetComponent<HeartScript>().NextSprite();
+        }
+        else if (health == 2)
+        {
+            heart2.GetComponent<HeartScript>().NextSprite();
+        }
+        else if (health == 1)
+        {
+       
+            heart3.GetComponent<HeartScript>().NextSprite();
+        }
+        }
+
         if (health <= 0)
         {
+            heart3.GetComponent<HeartScript>().NextSprite();
             animator.SetTrigger("Dead");
             deathDelayTimer = deathDelay;
             deathActive = true;
             rb.gravityScale = 5;
         }
-        else animator.SetTrigger("Hurt");
+        
     }
 
     public void die()
