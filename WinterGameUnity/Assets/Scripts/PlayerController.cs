@@ -63,10 +63,12 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controls.Player.Jump.performed += _ => jump();
+        controls.Player.Quit.performed += _ => gameMan.quitGame();
     }
 
     void Update()
     {
+
         if (!deathActive)
         {
             move();

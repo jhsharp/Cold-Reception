@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 5785107250101660192, guid: e67c6917e56c3ca4a933cbb7cc01e453, type: 3}
-  damage: 2
+  damage: 1
   rollSpeed: 4
   rolling: 0
 --- !u!95 &5466783226599618975

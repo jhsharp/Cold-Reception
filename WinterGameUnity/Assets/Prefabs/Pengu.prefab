@@ -195,7 +195,7 @@ MonoBehaviour:
   kickRange: 0.3
   kickDelay: 0.5
   deathDelay: 0.8
-  attackDamage: 2
+  attackDamage: 1
   health: 0
   attackTimer: 0
   kickTimer: 0
